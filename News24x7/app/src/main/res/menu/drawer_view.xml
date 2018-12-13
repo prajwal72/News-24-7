@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/general"
+            android:title="@string/general" />
+        <item
+            android:id="@+id/business"
+            android:title="@string/business" />
+        <item
+            android:id="@+id/sports"
+            android:title="@string/sports" />
+        <item
+            android:id="@+id/entertainment"
+            android:title="@string/entertainment" />
+        <item
+            android:id="@+id/health"
+            android:title="@string/health" />
+        <item
+            android:id="@+id/science"
+            android:title="@string/science" />
+        <item
+            android:id="@+id/technology"
+            android:title="@string/technology" />
+    </group>
+
+</menu>

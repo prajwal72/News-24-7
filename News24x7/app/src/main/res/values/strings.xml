@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">News 24x7</string>
+
+    <string name="search_hint">Search</string>
+
+    <string name="desc_trial">Jio continued to impress with quarterly performance and despite strong competition,
+        operating revenue increased and the company sustained operating margins as well.</string>
+    <string name="title_trial">Reliance Industries Q2: Tepokkjllecom, retail drive healthy results</string>
+    <string name="source_trial">NPR.com</string>
+    <string name="date_trial">17 Dec</string>
+
+    <string name="news_url">https://newsapi.org/v2/top-headlines</string>
+    <string name="api_key">c47ec8dc2c194918b29d8d85e072f4d5</string>
+    <string name="no_connection">NO INTERNET CONNECTION</string>
+
+
+    <string name="general">General</string>
+    <string name="business">Business</string>
+    <string name="sports">Sports</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="health">Health</string>
+    <string name="science">Science</string>
+    <string name="technology">Technology</string>
+    <string name="powered">Powered by NewsAPI.org</string>
+    <string name="dark_mode">Dark Mode</string>
+</resources>
