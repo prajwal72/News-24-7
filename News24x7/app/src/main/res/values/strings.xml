@@ -22,5 +22,4 @@
     <string name="science">Science</string>
     <string name="technology">Technology</string>
     <string name="powered">Powered by NewsAPI.org</string>
-    <string name="dark_mode">Dark Mode</string>
 </resources>

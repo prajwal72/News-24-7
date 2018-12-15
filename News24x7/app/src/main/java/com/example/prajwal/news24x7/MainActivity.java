@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<A
         actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_white);
         mLayoutManager = new LinearLayoutManager(this);
         category="General";
+        final TextView emptyView=(TextView)findViewById(R.id.empty_view);
 
 
         ConnectivityManager connectivityManager=(ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -57,14 +58,12 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<A
         {
             View loadingIndicator=findViewById(R.id.loading);
             loadingIndicator.setVisibility(View.GONE);
-            TextView emptyView=(TextView)findViewById(R.id.empty_view);
             emptyView.setText(R.string.no_connection);
         }
 
-
-        mDrawerLayout=findViewById(R.id.drawer_layout);
         NavigationView navigationView=findViewById(R.id.nav_view);
-        navigationView.getMenu().getItem(0).setChecked(true);
+        mDrawerLayout=findViewById(R.id.drawer_layout);
+        navigationView.getMenu().getItem(2).setChecked(true);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -72,47 +71,41 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<A
                 int id=menuItem.getItemId();
                 View loadingIndicator=findViewById(R.id.loading);
                 loadingIndicator.setVisibility(View.VISIBLE);
+                emptyView.setVisibility(View.GONE);
                 switch (id){
                     case R.id.sports:category="sports";
                         getLoaderManager().restartLoader(0,null,MainActivity.this);
                         toolbar.setTitle(R.string.sports);
-                        loadingIndicator.setVisibility(View.VISIBLE);
                         break;
 
                     case R.id.general:category="general";
                         getLoaderManager().restartLoader(0,null,MainActivity.this);
                         toolbar.setTitle(R.string.general);
-                        loadingIndicator.setVisibility(View.VISIBLE);
                         break;
 
                     case R.id.business:category="business";
                         getLoaderManager().restartLoader(0,null,MainActivity.this);
                         toolbar.setTitle(R.string.business);
-                        loadingIndicator.setVisibility(View.VISIBLE);
                         break;
 
                     case R.id.entertainment:category="entertainment";
                         getLoaderManager().restartLoader(0,null,MainActivity.this);
                         toolbar.setTitle(R.string.entertainment);
-                        loadingIndicator.setVisibility(View.VISIBLE);
                         break;
 
                     case R.id.science:category="science";
                         getLoaderManager().restartLoader(0,null,MainActivity.this);
                         toolbar.setTitle(R.string.science);
-                        loadingIndicator.setVisibility(View.VISIBLE);
                         break;
 
                     case R.id.technology:category="technology";
                         getLoaderManager().restartLoader(0,null,MainActivity.this);
                         toolbar.setTitle(R.string.technology);
-                        loadingIndicator.setVisibility(View.VISIBLE);
                         break;
 
                     case R.id.health:category="health";
                         getLoaderManager().restartLoader(0,null,MainActivity.this);
                         toolbar.setTitle(R.string.health);
-                        loadingIndicator.setVisibility(View.VISIBLE);
                         break;
 
                 }
