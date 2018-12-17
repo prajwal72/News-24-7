@@ -45,7 +45,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:text="@string/no_connection"
+            android:visibility="invisible"
             android:textAppearance="?android:textAppearanceMedium"/>
+
+        <Button
+            android:id="@+id/try_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/empty_view"
+            android:background="@color/colorAccent"
+            android:layout_centerInParent="true"
+            android:text="@string/try_again"
+            android:visibility="invisible"
+            />
 
         <ProgressBar
             android:id="@+id/loading"

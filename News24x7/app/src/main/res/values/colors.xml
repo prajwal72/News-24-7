@@ -9,4 +9,5 @@
     <color name="secondary_text">#37474F</color>
     <color name="background">#eceff1</color>
     <color name="lightCard">#fafafa</color>
+    <color name="white">#ffffff</color>
 </resources>
