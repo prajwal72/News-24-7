@@ -9,7 +9,7 @@ Glide
 
 ### Screenshots
 
-![img](./assets/img/Main%20Page.png)
+![img](./News24x7/assets/img/Main%20Page.png)
 
-![img](./assets/img/Navigation%20Drawer.png)
+![img](./News24x7/assets/img/Navigation%20Drawer.png)
 
